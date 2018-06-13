@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/Whrite">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:background="@color/TitleBarColor"
+                android:layout_weight="0.2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"></LinearLayout>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="8"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:text="People Detect"/>
+                <Button
+                    android:id="@+id/UpdateB"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:text="update"
+                    android:textSize="20dp"
+                    android:background="@drawable/cirual"/>
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.06"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:orientation="vertical"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.8"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8"
+                    android:orientation="horizontal"
+                    android:weightSum="2.05">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+                            <ImageView
+                                android:id="@+id/ANumPeoView"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:background="@color/level1Color"
+                                android:layout_weight="8"/>
+                                <TextView
+                                    android:gravity="center"
+                                    android:id="@+id/ANumPeoText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="2"
+                                    android:text="Section A : 100"
+                                    android:textSize="20dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:orientation="vertical"
+                            android:weightSum="10"
+                            >
+
+                            <ImageView
+                                android:id="@+id/CNumPeoView"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:background="@color/level3Color"
+                                android:layout_weight="8"/>
+                            <TextView
+                                android:id="@+id/CNumPeoText"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:gravity="center"
+                                android:layout_weight="2"
+                                android:text="Section C : 100"
+                                android:textSize="20dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/BNumPeoView"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:background="@color/level2Color"
+                                android:layout_weight="8"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:id="@+id/BNumPeoText"
+                                android:gravity="center"
+                                android:layout_weight="2"
+                                android:text="Section B : 100"
+                                android:textSize="20dp"/></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="bottom"
+                            android:orientation="vertical"
+                            android:weightSum="10">
+
+                            <ImageView
+                                android:id="@+id/DNumPeoView"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:background="@color/level1Color"
+                                android:layout_weight="8"/>
+                            <TextView
+                                android:id="@+id/DNumPeoText"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="Section D : 100"
+                                android:textSize="20dp"/></LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.08"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:weightSum="10"
+                    android:gravity="bottom">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.7"
+                        android:gravity="top">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="19dp"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:text="Find Person"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:weightSum="10">
+                            <EditText
+                                android:id="@+id/SeachSecEdit"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:weightSum="10">
+                            <Button
+                                android:id="@+id/SeachButton"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="8"
+                                android:background="@drawable/cirual"
+                                android:text="Seach"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3">
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="left"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:id="@+id/PersonDataText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="9"
+                        android:textSize="20dp"
+                        android:background="@color/gray"
+                        android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
